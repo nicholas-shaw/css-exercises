@@ -1,0 +1,20 @@
+body:nth-child(odd),
+.redBG {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.largeText {
+  font-size: 24px;
+}
+
+#firstID {
+  color: rgb(0, 0, 255);
+  font-size: 36px;
+}
+
+#secondID {
+  background-color: rgb(140, 255, 140);
+  font-size: 24px;
+  font-weight: 700;
+}
