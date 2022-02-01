@@ -1,28 +1,70 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
 }
 
 .header {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 72px;
   height: 72px;
   background: darkmagenta;
   color: white;
+  padding: 0 1rem;
 }
 
 .footer {
+  text-align: center;
   height: 72px;
+  line-height: 72px;
   background: #eee;
   color: darkmagenta;
 }
 
 .sidebar {
+  flex-shrink: 0;
   width: 300px;
   background: royalblue;
 }
 
+.sidebar ul {
+  flex-shrink: 0;
+}
+
+.sidebar li {
+  font-size: 24px;
+  padding: 16px;
+  list-style: none;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.mainFrame {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  height: 100%;
+  justify-content: center;
+}
+
 .card {
+  padding: 16px;
   border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  max-width: 300px;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
 }
